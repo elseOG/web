@@ -1,0 +1,33 @@
+<!--
+    Condicionales: IF
+    Dado un numero imprimir si es par o impar
+-->
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title>SNPP</title>
+        </head>
+        <body>
+            <h1>Comprobar si un numero es par o impar</h1>
+            <script>
+                //solicitar un numero
+                //prompt despliega una ventana para introducir un valor
+                //el tipo de dato es un string, por lo que hay que convertirlo a numero
+                var numero = Number(prompt('Escriba un numero'));
+                // si es nulo enviar un alert
+                if(isNaN(numero))
+                {  
+                    alert('No es un valor valido');
+                }else{ 
+                    if(numero % 2 == 0){
+                        alert('El numero '+ numero + ' es par');
+                    }else{    
+                        alert('El numero '+ numero + ' es impar');
+                    }
+                       
+                }
+            </script>
+        </body>  
+
+
+    </html>
