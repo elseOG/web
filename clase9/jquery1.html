@@ -1,0 +1,30 @@
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>uso de jquery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#ocultar").click(function(){
+                    $("p").hide();
+                    $("h2").hide();
+                });  
+
+                $("#ver").click(function(){
+                    $("p").show();
+                    $("h2").show();
+                })   
+            });    
+        </script>
+    </head>
+    <body>
+        <button id="ocultar">Ocultar</button>
+        <button id="ver">Ver</button>
+        <h2>Introduccion a JQuery</h2>
+        <p>Haz que el titulo tambien se oculte 
+            al hacer clic en el mismo
+        </p>
+    </body>
+</html>
