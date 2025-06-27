@@ -1,0 +1,156 @@
+/* Fuente moderna y fondo claro */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+#inicio {
+    background-image: url('resources/img5.jfif'); /* Cambia esto por la ruta real */
+    background-size: cover;      /* Ajusta la imagen para cubrir todo el footer */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    color: white;                /* Cambia el color del texto si es necesario */
+    padding: 20px;               /* Espaciado interno */
+    text-align: center;
+}
+
+.foot{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.social-icons{
+    background-color: rgb(3, 16, 87);
+}
+    
+/* Encabezado */
+header {
+    background-color: #0e0bbb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Navegación horizontal */
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #666;
+    color: #ffdd57;
+}
+
+nav a.active {
+    background-color: #ffdd57;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 800px;
+    animation: slide 18s infinite;
+    transition: margin-left 1s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Transición suave entre imágenes */
+@keyframes slide {
+    0% { margin-left: 0%; }
+    33% { margin-left: -100%; }
+    66% { margin-left: -200%; }
+    100% { margin-left: 0%; }
+}
+
+/* Sección Samsung */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+    background-color: #fff;
+    margin: 40px 0;
+}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+section .text-content {
+    max-width: 500px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ffdd57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .text-content {
+        max-width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
